@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Design version="12" xmlns="http://cypress.com/xsd/cydesignfile_v3">
-    <ToolInfo version="2.2.0.2801"/>
+    <ToolInfo version="2.3.0.4276"/>
     <Devices>
         <Device mpn="CYBT-253059-02">
             <BlockConfig>
@@ -24,8 +24,8 @@
                         <Param id="InterruptTrigger" value="GPIO_EN_INT_RISING_EDGE"/>
                     </Personality>
                 </Block>
-                <Block location="ioss[0].pin[13]">
-                    <Alias value="PUART_CTS"/>
+                <Block location="ioss[0].pin[11]">
+                    <Alias value="PUART_RTS"/>
                     <Personality template="20x19_pin" version="1.0">
                         <Param id="Type" value="PERIPHERAL"/>
                         <Param id="Index" value="0"/>
@@ -36,8 +36,8 @@
                         <Param id="InterruptTrigger" value="GPIO_EN_INT_RISING_EDGE"/>
                     </Personality>
                 </Block>
-                <Block location="ioss[0].pin[11]">
-                    <Alias value="PUART_RTS"/>
+                <Block location="ioss[0].pin[13]">
+                    <Alias value="PUART_CTS"/>
                     <Personality template="20x19_pin" version="1.0">
                         <Param id="Type" value="PERIPHERAL"/>
                         <Param id="Index" value="0"/>
@@ -103,12 +103,12 @@
             </BlockConfig>
             <Netlist>
                 <Net>
-                    <Port name="ioss[0].pin[13].aux[0]"/>
-                    <Port name="uart[1].cts[0]"/>
-                </Net>
-                <Net>
                     <Port name="ioss[0].pin[11].aux[0]"/>
                     <Port name="uart[1].rts[0]"/>
+                </Net>
+                <Net>
+                    <Port name="ioss[0].pin[13].aux[0]"/>
+                    <Port name="uart[1].cts[0]"/>
                 </Net>
                 <Net>
                     <Port name="ioss[0].pin[32].aux[0]"/>
