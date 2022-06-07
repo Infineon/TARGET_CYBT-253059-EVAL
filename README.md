@@ -23,4 +23,4 @@ Max UART baud rate is 1M. Use baud rate of 115200 for Client Control.
 
 External 32 kHz LPO is used by default. To operate without external LPO, set USE\_32K\_EXTERNAL\_LPO=0 on the make command line or edit the default value in CYBT-253059-EVAL.mk.
 
-For more information, see [CYBT-253059-EVAL](http://www.cypress.com/CYBT-253059-EVAL)
+For more information, see [CYBT-253059-EVAL](https://www.infineon.com/cms/en/product/evaluation-boards/cybt-253059-eval/)
